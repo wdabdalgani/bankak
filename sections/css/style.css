@@ -1,0 +1,280 @@
+:root{
+    --main-color: #fa0c0c;
+    --white-color: #f9f9f9;
+    --second-color: ;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: rgb(16, 14, 14);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.container .phone{
+    width: 375px;
+    height: 98vh;
+    background-color: var(--white-color);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.container .phone .box-red{
+    width: 100%;
+    height: 43%;
+    background: var(--main-color);
+}
+form{
+    width: 100%;
+}
+
+.phone .line-red{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 10%;
+    text-align: center;
+   position: relative;
+
+}
+.line-red .logo_center{
+    width: 82px;
+    text-align: center;
+    cursor: pointer;
+}
+.phone .line-red .logout{
+    width: 30px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    top: 20px;
+    
+}
+.sayHi{
+    padding: 10px 5px;
+}
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    line-height: 0;
+  
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3px;
+}
+.nav img{
+    cursor: pointer;
+}
+
+.nav span{
+    font-weight: 100;
+    font-size: 19px;
+
+}
+.btn-transform{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px 1px #13131331;
+    padding: 10px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn-transform div{
+    display: flex;
+    align-items: center;
+   
+}
+.btn-transform img{
+    width: 42px;
+    height: 40px;
+  
+}
+.btn-transform a{
+    color: #626262;
+    margin-right: 10px;
+}
+.btn-transform .btn-link{
+        width: 38px;
+        height: 38px;
+}   
+/*  trans page */
+.sections{
+    width: 100%;
+    height: 60px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2px 60px ;
+    position: relative;
+
+}
+.sections a{
+    color: #f9f9f9;
+    font-size: 20px;
+}
+.sections a:first-child{
+    background-color: #626262;
+    position: absolute;
+    right: 0;
+    background:linear-gradient(rgb(247, 3, 3),#660101f7);
+    top: 0px;
+    bottom: 0;
+    width: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+.sections .second-child{
+    
+}
+.input_num{
+    width: 97%;
+    margin: 14px auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+.input_num input{
+  
+    width: 100%;
+    font-size: 17px;
+    padding: 16px 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.612);
+    border: 1px solid rgba(86, 84, 84, 0.368);
+
+}
+.input_num  img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 44px;
+    cursor: pointer;
+    
+}
+.input_num  img:hover{
+    padding: 4px;
+}
+
+.input_num input:focus{
+    
+    border: none;
+    outline: 1px solid rgba(86, 84, 84, 0.368);
+}
+/* 
+    button.9.png
+
+*/
+.btn-send{
+    width: 120px;
+    height: 80px;
+    background: url(../../icons/button.9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-send a{
+    color: rgb(227, 232, 227);
+    font-size: 19px;
+}
+
+.btn-transform1{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px 1px #13131331;
+    padding: 10px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    height: 90px;
+}
+.btn-transform1 div{
+        display: flex;
+   
+}
+.btn-transform1  .data{
+
+    width: 190px;
+    height: 100%;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    line-height: 10px;
+    text-align: right;
+    margin-top: 7px;
+
+}
+.btn-transform1 .data a{
+    font-size: 14px;
+}
+.btn-transform1 .data a:first-child{
+    font-size: 19px;
+  
+   
+
+    
+    
+}
+.btn-transform1 img{
+    width: 44px;
+    height: 44px;
+    border: 2px solid rgb(212, 209, 209);
+    padding: 3px;
+    border-radius: 50%;
+    margin-top: 9px;
+  
+}
+.btn-transform1 a{
+    color: #626262;
+    margin-right: 10px;
+}
+.btn-transform1 .btn-link{
+        width: 55px;
+        height: 55px;
+        border: none;
+        padding: 0;
+        border-radius: none;
+}
+.bottons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (min-width: 776px) {
+    .container{
+        height: auto;
+    }
+  }

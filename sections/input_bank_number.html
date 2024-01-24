@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>  بيانات الحساب </title>
+</head>
+<body>
+    <div class="container">
+       <div class="phone">
+        <div class="line-red">
+            <img src="../icons/white_logo_n.png" alt="" class="logo_center">
+            <img src="../icons/logout_icon.png" alt="" class="logout">
+        </div>
+        <div class="nav">
+            <a href="../main.html">
+                <img src="../icons/logout.png" alt="">
+            </a>
+            <span>تحويل لحساب ببنك الخرطوم </span>
+            <span> </span>
+        </div>
+        <div class="main-content">
+            <div class="sections">
+                <a href="#">دفع مباشر</a>
+                <a href="Trans_prosess.html">المستفيدين</a>
+               </div>
+               <form action="" method="get">
+               <div class="input_num">
+                    <input id="num-proses" type="text" placeholder="رقم العملية" oninput="getValue()">
+                    <img src="../icons/qrhisticon.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses1" type="text" placeholder="الوقت والتاريخ "oninput=" getValue1()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses2" type="text" placeholder="من حساب   "oninput=" getValue2()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses3" type="text" placeholder="  الي حساب    "oninput=" getValue3()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses4" type="text" placeholder="  اسم المرسل اليه       "oninput=" getValue4()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses5" type="text" placeholder="    رقم الموبايل          "oninput=" getValue5()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses6" type="text" placeholder=" التعليق        "oninput=" getValue6()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="input_num">
+                    <input id="num-proses7" type="text" placeholder=" المبلغ        "oninput=" getValue7()"> >
+                    <img src="../icons/requests.png" alt="">
+                </div>
+                <div class="bottons">
+                    <div class="btn-send">
+                        <a href="">ارسال</a>
+                    </div>
+                    <div class="btn-send">
+                        <a href="">إلغاء</a>
+                    </div>
+                </div>
+            </form>
+            </div>
+       
+        </div>
+        <div class="phone1">
+            <div class="right">
+                <img src="../icons/sucess8.png" alt="">
+            </div>
+                <p>تحويلات</p>
+                <div class="content">
+                    <span>رقم العملية</span>
+                    <span id="res"> </span>
+                </div>
+                <div class="content">
+                    <span>  التاريخ والزمن  </span>
+                    <span id="res1" ></span>
+                </div>
+                <div class="content">
+                    <span>    من حساب  </span>
+                    <span id="res2" > </span>
+                </div>
+                <div class="content">
+                    <span>  الي حساب    </span>
+                    <span id="res3" >        </span>
+                </div>
+                <div class="content">
+                    <span>  اسم المرسل اليه    </span>
+                    <span id="res4" >       </span>
+                </div>
+                <div class="content">
+                    <span>  رقم الموبايل    </span>
+                    <span id="res5" >    </span>
+                </div>
+                <div class="content">
+                    <span>  التعليق    </span>
+                    <span id="res6">    </span>
+                </div>
+                <div class="content">
+                    <span>  المبلغ    </span>
+                    <span id="res7"></span>
+                </div>
+                <div class="btn-ok">
+                    <span>موافق</span>
+                    <img src="../icons/sucessbutton.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="../icons/newaddmore.png" alt="">
+                    <img src="../icons/newaddtransfernow.png" alt="">
+                    
+                </div>
+                <div class="detils">
+                    <div class="line">
+                        <img src="../icons/whiteviewstraight.png" alt="">
+                    </div>
+                    <div class="line1">
+                        <img src="../icons/whiteviewstraight.png" alt="">
+                    </div>
+                    <div class="shirt">
+                        <img src="../icons/share.png" alt="">
+                        مشاركة
+                    </div>
+                    <div class="shirt">
+                         <img src="../icons/print.png" alt="">
+                    طباعة 
+                    </div>
+                    <div class="shirt">
+                         <img src="../icons/download.png" alt="">
+                         تحميل<span> </span>
+                    </div>
+                </div>
+                <span class="footer">جميع الحقوق محفوظة لدى بنكك 2024م</span>
+           </div>
+       </div>
+    </div>
+    <script>
+        function getValue(){
+            let txt = document.getElementById("num-proses");
+            let txtvalue = txt.value;
+            let result = document.getElementById('res');
+            result.innerHTML = txtvalue;
+        }
+        function getValue1(){
+            let txt1 = document.getElementById("num-proses1");
+            let txtvalue1 = txt1.value;
+            let result1 = document.getElementById('res1');
+            result1.innerHTML = txtvalue1; 
+        }
+        function getValue2(){
+            let txt2 = document.getElementById("num-proses2");
+            let txtvalue2 = txt2.value;
+            let result2 = document.getElementById('res2');
+            result2.innerHTML = txtvalue2; 
+        }
+        function getValue3(){
+            let txt3 = document.getElementById("num-proses3");
+            let txtvalue3 = txt3.value;
+            let result3 = document.getElementById('res3');
+            result3.innerHTML = txtvalue3; 
+        }
+        function getValue4(){
+            let txt4 = document.getElementById("num-proses4");
+            let txtvalue4 = txt4.value;
+            let result4 = document.getElementById('res4');
+            result4.innerHTML = txtvalue4; 
+        }
+        function getValue5(){
+            let txt5 = document.getElementById("num-proses5");
+            let txtvalue5 = txt5.value;
+            let result5 = document.getElementById('res5');
+            result5.innerHTML = txtvalue5; 
+        }
+        function getValue6(){
+            let txt6 = document.getElementById("num-proses6");
+            let txtvalue6 = txt6.value;
+            let result6 = document.getElementById('res6');
+            result6.innerHTML = txtvalue6; 
+        }
+        function getValue7(){
+            let txt7 = document.getElementById("num-proses7");
+            let txtvalue7 = txt7.value;
+            let result7 = document.getElementById('res7');
+            result7.innerHTML = txtvalue7; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>بنــــــــكك</title>
+</head>
+<body>
+    <div class="container">
+       <div class="phone2">
+        <div class="btn0">
+            <a href="login.html">دخول</a>
+           </div>
+        <div class="img">
+            <img src="icons/white_logo_n.png" alt="">
+            
+        </div>
+        <P >        
+             نسخة إبتدائية لتطبيق بنكك @Mohammed_Abdualgani   
+            <br>
+            <span id="disp"></span>
+        </P>
+       </div>
+       
+    </div>
+    <script>
+        
+        var speed = 220;
+        var num = 0;
+        var i = document.getElementById('disp');
+        var txt = `All copy right Saved by Sunammi wd abdulagani 2024 `;
+
+        function demo(){
+            if (num < txt.length) {
+                i.innerHTML += txt.charAt(num);
+                num++;
+                setTimeout(demo, speed);
+            }else{
+                num = 0;
+                i.innerHTML = txt.charAt(num);
+                num++;
+                setTimeout(demo, speed);
+            }
+        }
+        demo();
+    </script>
+</body>
+</html>

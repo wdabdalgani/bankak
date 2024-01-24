@@ -1,0 +1,151 @@
+:root{
+    --main-color: #fa0c0c;
+    --white-color: #f9f9f9;
+    --second-color: ;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(16, 14, 14);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
+}
+.container .phone1{
+    width: 375px;
+    height: 98vh;
+    background-color: var(--white-color);
+    margin: auto;
+    position: relative;
+    background:url(../../icons/successscreenbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .phone1 .right{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .phone1 .right img{
+    width: 139px;
+    background: rgb(244, 243, 243);
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 02px #ffffff;
+}
+.phone1 p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+form{
+    width: 80%;
+}
+.content{
+    cursor: pointer;
+    border: 1px solid white;
+    width: 84%;
+    margin: auto;
+    border-radius: 3px;
+    padding: 6px 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content span:last-child{
+    direction: rtl;
+}
+.content span{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-ok{
+    width: 90px;
+    height: 70px;
+    margin:15px auto;
+    position: relative;
+}
+.btn-ok span{
+    position:absolute;
+    top: 34%;
+    right: 34%;
+    color: white;
+}
+
+.btn-ok img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.icon {
+    width: 100%;
+    height: auto;
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+.icon  img{
+    width: 54px;
+    cursor: pointer;
+}
+.detils {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.detils .shirt{
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.detils .shirt img{
+    width: 18px;
+    margin-left: 5px;
+}
+.line {
+    position: absolute;
+    right: 120px;
+    bottom: 3px;
+    height: 24px;
+    overflow: hidden;
+}
+.line1 {
+    position: absolute;
+    left: 120px;
+    bottom: 3px;
+    height: 24px;
+    overflow: hidden;
+}
+.footer{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+margin: 5px;}
